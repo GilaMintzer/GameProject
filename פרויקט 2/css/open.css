@@ -1,0 +1,62 @@
+@font-face {
+  src: url("https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2");
+  font-family: "Compressa VF";
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(255,20,66);
+  background-image: repeating-linear-gradient(-45deg,
+        rgba(0,0,0,.1), rgba(0,0,0,.1) 10px, rgba(255,20,66,1), rgba(255,20,66,1) 20px);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Compressa VF';
+  font-size: 19vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-variation-settings: 'wght' 200, 'wdth' 85;
+  color: #fff;
+}
+
+
+h1 .char {
+	--delay: calc((var(--char-index) + 1) * 100ms);
+	animation: wave 1000ms infinite both;
+	animation-delay: var(--delay);
+  animation-direction: alternate-reverse;
+  display: block;
+  float: left;
+ 
+}
+
+@keyframes wave {
+	60% {
+		font-variation-settings: 'wght' 700, 'wdth' 100;
+	}
+
+	100% {
+		font-variation-settings: 'wght' 200, 'wdth' 85;
+	}
+}
+
+#go{
+  padding-top: 30px;
+  padding-left: 60px;
+}
+
+a{
+  color:black;
+  font-size: 3em;
+  text-decoration: none;
+}
+

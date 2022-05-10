@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+    color: crimson;
+    font-size: 50px;
+}
+
+h1,h3{
+    text-align: center;
+
+}
+
+#button{
+    width:20vh;
+    height: 5vh;
+    background-color: crimson;
+    margin-left: 160vh;
+    margin-bottom:10vh;
+}

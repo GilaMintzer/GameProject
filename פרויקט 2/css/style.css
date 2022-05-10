@@ -1,0 +1,300 @@
+#main{
+    background-color: black;
+    width:50%;
+    height:90vh;
+    margin:0 25%;
+}
+
+#header{
+    background-color: black;
+    width:50%;
+    margin:0 25%;
+}
+
+#scores{
+    display: none;
+}
+
+.circle {
+	border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-animation: wiggle 1s infinite;
+    animation: wiggle 1s infinite;
+}
+
+.square {
+    animation: a 1s ease both Infinite;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-animation: wiggle 1s infinite;
+    animation: wiggle 1s infinite;
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+    cursor: pointer;
+    -webkit-animation: wiggle 1s infinite;
+    animation: wiggle 1s infinite;
+}
+
+.pink{
+    background-color: crimson;
+    z-index: 2;
+    box-shadow: 3px 9px 78px  crimson;
+}
+
+.blue{
+    background-color: rgb(12, 183, 240);
+    z-index: 2;
+    box-shadow: 3px 9px 78px  rgb(12, 183, 240);
+}
+
+.green{
+    background-color:rgb(9, 219, 9);
+    box-shadow: 3px 9px 78px  rgb(9, 219, 9);
+    z-index: 2;
+}
+
+
+.yellow{
+    background-color: yellow;
+    z-index: 2;
+}
+
+.pinkT{
+    border-right: 50px solid crimson;
+    z-index: 2;
+}
+
+.blueT{
+    border-right:50px solid rgb(12, 183, 240);
+    z-index: 2;
+}
+
+.greenT{
+    border-right:50px solid rgb(9, 219, 9);
+    z-index: 2;
+}
+
+
+.yellowT{
+    border-right: 50px solid yellow;
+    z-index: 2;
+}
+#stam1{
+    z-index: 30;
+    margin: auto;
+    margin-top: 10%;
+}
+#chosen{
+    z-index: 30;
+    margin: unset;
+   
+}
+
+.taptap
+{
+    padding-top: 15%;
+    color:crimson;
+    font-size: 400%;
+    text-align: center;
+}
+
+.tap{
+    color:yellow;
+    font-size: 300%;
+    margin: 10%;
+    text-align: center;
+}
+
+.newGame{
+    color:rgb(12, 183, 240);
+    font-size: 300%;
+    margin-top: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contain{
+    display:flex;
+    background-color: white;
+    z-index: 6;
+    width:auto;
+}
+
+.click{
+    color:rgb(247, 253, 247);
+    font-size: 300%;
+    margin: 15%;
+    text-align: center;
+}
+
+.borderBottom{
+    border-bottom:2px solid grey;
+}
+
+.point{
+    padding-top: 20%;
+    color:crimson;
+    font-size: 400%;
+    text-align: center;
+}
+
+.pointer{
+    text-align: center;
+    font-size: 300%;
+}
+
+.scr{
+    color:yellow;
+    font-size: 350%;
+    text-align: center;
+}
+
+.scr2{
+    color: rgb(12, 183, 240);
+    font-size: 300%;
+    text-align: center;
+}
+
+#stam2{
+    z-index: 30;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.over
+{
+    padding-top: 15%;
+    color:crimson;
+    font-size: 350%;
+    text-align: center;
+}
+
+.lost{
+    color:rgb(12, 183, 240);
+    font-size: 350%;
+    text-align: center;
+}
+
+.try{
+    color:rgb(9, 219, 9);
+    font-size: 350%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.chances{
+    color:crimson;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 7%;
+    justify-self: flex-end;
+}
+
+.oops{
+    padding-top: 10%;
+    color: rgb(12, 183, 240);
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pity{
+    color: rgb(9, 219, 9);
+    font-size: 4em;
+    text-align: center;
+}
+
+.end{
+    padding-top: 30%;
+    color: yellow;
+    font-size: 7em;
+    text-align: center;
+}
+
+.finalScores{
+    color: crimson;
+    font-size: 4em;
+    text-align: center;
+}
+
+.option{
+    color:yellow;
+    font-size: 4em;
+    text-align: right;
+    margin-right: 10vh;
+}
+
+.div{
+    display: grid;
+    grid-template-columns: 60% 30%;
+}
+
+.div2{
+    padding-top: 0px;
+}
+
+.timer {
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(to right, rgb(12, 183, 240), rgb(9, 219, 9), crimson);
+    animation: timer 17s ease 0s 1 both;
+    z-index: 3;
+}
+
+@keyframes timer {
+    from {width: 0%}
+    to   {width: 100%;}
+}
+
+#stati{
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(to right, rgb(12, 183, 240), rgb(9, 219, 9), crimson);
+    animation: timer 0s ease 0s 1 both;
+    z-index: 3;
+}
+
+.passed{
+    padding-top: 5%;
+    color:crimson;
+    font-size: 400%;
+    text-align: center;
+}
+
+@keyframes a{
+    from {transfrom: scale(1);}
+    to {transfrom: scale(7);}
+}
+
+@-webkit-keyframes wiggle {
+    0%,
+    100% {
+      transform: scale(1.2) rotate(7deg);
+    }
+  
+    50% {
+      transform: scale(0.8) rotate(-7deg);
+    }
+  }
+  
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: scale(1.2) rotate(7deg);
+    }
+  
+    50% {
+      transform: scale(0.8) rotate(-7deg);
+    }
+  }
+  
+
+ 
